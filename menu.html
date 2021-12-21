@@ -1,254 +1,787 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Digital Menu Card | Saybancha Wada - Restaurant</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/font-awesome.css">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.0/mdb.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/menuStyle.css">
+  
 </head>
+
 <body>
 
-<!--Page Loader Start-->
-<div class="page-loader"></div>
-<!--Page Loader Start-->
 
-<!--Header Start-->
-<header class="header">
-  <div class="container">
-    <div class="row justify-content-between align-items-center">
-      <div class="logo">
-        <a href="index.html"><img src="img/logo_280_54.png" height = "34px" alt="logo"></a>
-        
+
+  <!--Header Start-->
+  <header class="headerC">
+    <div class="containerC">
+      <div class="rowC justify-content-betweenC align-items-centerC">
+        <div class="logoC">
+          <!--use dimentions logo_280_54-->
+          <a href="index.html"><img src="img/headerLogo.png" height="34px" alt="logo"></a>
+
+        </div>
+        <button type="button" class="nav-togglerC">
+          <span></span>
+        </button>
+        <nav class="navC">
+          <ul>
+            <li class="nav-item"><a href="index.html">home</a></li>
+            <li class="nav-item"><a href="index.html#about">about</a></li>
+            <li class="nav-item"><a href="index.html#hours-location">hours & location</a></li>
+            <li class="nav-item"><a href="menu.html">our menu</a></li>
+            <li class="nav-item"><a href="index.html#private-events">private event</a></li>
+            <li class="nav-item"><a href="gallery.html">Photo Gallery</a></li>
+            <!--li class="nav-item"><a href="#testimonials">testimonials</a></li-->
+            <!--li class="nav-item"><a href="#team">team</a></li-->
+            <li class="nav-item"><a href="#footer">contact us</a></li>
+          </ul>
+        </nav>
       </div>
-      <button type="button" class="nav-toggler">
-        <span></span>
-      </button>
-      <nav class="nav">
-        <ul class="menu-tabs">
-            <li class="menu-tab-item active" data-target="#snack">sanacks</li>
-            <li class="menu-tab-item" data-target="#pav-bhaji">pav bhaji</li>
-            <li class="menu-tab-item" data-target="#pizza">pizza</li>
-            <li class="menu-tab-item" data-target="#rice">rice</li>
+    </div>
+  </header>
+  <!--Header End-->
+
+
+<!--menu card start-->
+  <!--div class="menu-container">
+    <img src="img/menu-card/menu1.jpg" class="center" alt="menu card" data-aos="zoom-out">
+    <img src="img/menu-card/menu2.jpg" class="center" alt="menu card" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1200">
+    <img src="img/menu-card/menu3.jpg" class="center" alt="menu card" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1000">
+    <img src="img/menu-card/menu4.jpg" class="center" alt="menu card" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1000">
+    <img src="img/menu-card/menu5.jpg" class="center" alt="menu card" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1000">
+    <img src="img/menu-card/menu6.jpg" class="center" alt="menu card" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1000">
+    <img src="img/menu-card/menu7.jpg" class="center" alt="menu card" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1000">
+    <img src="img/menu-card/menu8.jpg" class="center" alt="menu card" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1000">
+    <img src="img/menu-card/menu9.jpg" class="center" alt="menu card" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1000">
+    <img src="img/menu-card/menu10.jpg" class="center" alt="menu card" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1000">
+    <img src="img/menu-card/menu11.jpg" class="center" alt="menu card" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1000">
+    <img src="img/menu-card/menu12.jpg" class="center" alt="menu card" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1000">  
+  </div-->
+
+  <!-- Buttons trigger collapse -->
+
+
+  <div class="wrapper">
+    <!--menu section start-->
+    <input type="radio" id="breakfast" name="accordion" checked="checked"/>
+    <label class="item" for="breakfast">
+      <div class="title">Breakfast</div>
+      <div class="content">
+        <ul class="list-group">
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Poha
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 40</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Upma
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 50</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Sheera
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 50</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Idli Sambar
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 60</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Mendu Wada Sambar
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 80</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Batata Wada Sambar
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 70</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Misal Paw
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 70</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Sabudana Khichadi
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 70</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Korma Puri
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 110</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Puri Bhaji
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 110</span>
+          </li>
         </ul>
-      </nav>
-    </div>
-  </div>
-</header>
-<!--Header End-->
-
-<!--Home Section Start-->
-<section class="home-section" id="home">
-  
-</section>
-
-<!--Home Section End-->
-
-
-
-<!--menu Section Start-->
-
-<section class="menu-section sec-padding" id="our-menu">
-  <div class="container">
-    <div class="row">
-      <div class="section-title">
-        <h2 data-title="order now" data-aos="fade-up" data-aos-duration="1000">Our Menu</h2>
-      </div>
-    </div>
-    
-    <div class="row menu-tab-content active" id="snack">
-        <div class="item-card" data-aos="zoom-in-right">
-            <div class="item-title">
-              <img src="img/menu/1.jpg" alt="menu item thumbnail">
-              <div class="item-desc">
-                <h3>Upma</h3>
-                ₹55.00
-              </div>
-            </div>
-        </div>
-        <div class="item-card" data-aos="zoom-in-right">
-            <div class="item-title">
-              <img src="img/menu/1.jpg" alt="menu item thumbnail">
-              <div class="item-desc">
-                <h3>Shira</h3>
-                ₹60.00
-              </div>
-            </div>
-        </div>
-        <div class="item-card" data-aos="zoom-in-right">
-            <div class="item-title">
-              <img src="img/menu/1.jpg" alt="menu item thumbnail">
-              <div class="item-desc">
-                <h3>idli sambar</h3>
-                ₹55.00
-              </div>
-            </div>
-        </div>
-        <div class="item-card" data-aos="zoom-in-right">
-            <div class="item-title">
-              <img src="img/menu/1.jpg" alt="menu item thumbnail">
-              <div class="item-desc">
-                <h3>Idli Fry</h3>
-                ₹60.00
-              </div>
-            </div>
-        </div>
-          
-    </div>
         
-    <div class="row menu-tab-content" id="pav-bhaji">
-        <div class="item-card" data-aos="zoom-in-right">
-            <div class="item-title">
-              <img src="img/menu/1.jpg" alt="menu item thumbnail">
-              <div class="item-desc">
-                <h3>pav bhaji</h3>
-                ₹110.00
-              </div>
-            </div>
-        </div>
-        <div class="item-card" data-aos="zoom-in-right">
-            <div class="item-title">
-              <img src="img/menu/1.jpg" alt="menu item thumbnail">
-              <div class="item-desc">
-                <h3>Cheese Pav Bhaji</h3>
-                ₹135.00
-              </div>
-            </div>
-        </div>
-        <div class="item-card" data-aos="zoom-in-right">
-            <div class="item-title">
-              <img src="img/menu/1.jpg" alt="menu item thumbnail">
-              <div class="item-desc">
-                <h3>Jain Pav Bhaji</h3>
-                ₹115.00
-              </div>
-            </div>
-        </div>
+      </div>
+    </label>
+    <!--menu section end-->
+
+    <!--menu section start-->
+    <input type="radio" id="southIndian" name="accordion"/>
+    <label class="item" for="southIndian">
+      <div class="title">South Indian</div>
+      <div class="content">
+        <ul class="list-group">
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Plain Dhosa
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 70</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Masala Dhosa
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 90</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Rawa Masala Dhosa
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 110</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Mysur Masala Dosa
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 120</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Cheese Masala Dosa
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 130</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Plain Uttapam
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 70</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Onion Uttapam
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 90</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Tomato Uttapam
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 100</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Cheese Uttapam
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 130</span>
+          </li> 
+        </ul>
+      </div>
+    </label>
+    <!--menu section end-->
+
+        <!--menu section start-->
+        <input type="radio" id="pavbhaji" name="accordion"/>
+        <label class="item" for="pavbhaji">
+          <div class="title">Pavbhaji</div>
+          <div class="content">
+            <ul class="list-group">
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Amul Pavbhaji
+                <span class="badge bg-warning rounded-pill fs-6">&#8377; 120</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                SPL Pavbhaji
+                <span class="badge bg-warning rounded-pill fs-6">&#8377; 140</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Khada Pavbhaji
+                <span class="badge bg-warning rounded-pill fs-6">&#8377; 130</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Cheese Pavbhaji
+                <span class="badge bg-warning rounded-pill fs-6">&#8377; 150</span>
+              </li>
+            </ul>
+          </div>
+        </label>
+        <!--menu section end-->
+    
+    <!--menu section start-->
+    <input type="radio" id="hotBaverages" name="accordion"/>
+    <label class="item" for="hotBaverages">
+      <div class="title">Hot Baverages</div>
+      <div class="content">
+        <ul class="list-group">
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Tea
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 30</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Lemon Tea
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 30</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Green Tea
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 40</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Coffee Nescafe
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 40</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Black Coffee
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 40</span>
+          </li> 
+        </ul>
+      </div>
+    </label>
+    <!--menu section end-->
+    
+    
+
+    <!--menu section start-->
+    <input type="radio" id="pizzaAndSandwiches" name="accordion"/>
+    <label class="item" for="pizzaAndSandwiches">
+      <div class="title">PIZZA AND SANDWICHES</div>
+      <div class="content">
+        <ul class="list-group">
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            PIZZA AND SANDWICHES
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 160</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            PIZZA AND SANDWICHES
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 180</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            MUSHROOM PANEER PIZZA
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 190</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            FOUR SEASON PIZZA
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 220</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            VEG SANDWICH /CHEESE
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 80 / &#8377; 100</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            VEG GRILL SANDWICH /CHEESE
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 100 / &#8377; 120</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            VEG GRILL SANDWICH /CHEESE
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 120</span>
+          </li> 
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            VEG CLUB SANDWICH
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 120</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            VEG CLUB SANDWICH
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 130</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            VEG CLUB SANDWICH
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 130</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            BREAD BUTTER/ TOAST
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 80</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            BREAD BUTTER/ TOAST
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 100</span>
+          </li>
+        </ul>
+      </div>
+    </label>
+    <!--menu section end-->
+
+    <!--menu section start-->
+    <input type="radio" id="baveragesCold" name="accordion"/>
+    <label class="item" for="baveragesCold">
+      <div class="title"> BEVERAGES ( COLD)</div>
+      <div class="content">
+        <ul class="list-group">
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            BOTTEL WATER
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 20</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            BOTTEL WATER
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 30</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            FRESH LIME WATER
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 30</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            FRESH LIME SODA
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 40</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            plain chaas /MASALA CHAAS
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 40/&#8377; 50</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            PLAIN LASSI
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 70</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            MANGO LASSI
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 80</span>
+          </li> 
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            SOLKADHI
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 40</span>
+          </li> 
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            ICE TEA LEMON /PEACH
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 70</span>
+          </li> 
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            COLD COFFEE /WITH ICECREAM
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 90/&#8377; 130</span>
+          </li> 
+          
+        </ul>
+      </div>
+    </label>
+    <!--menu section end-->
+
+  <!--menu section start-->
+  <input type="radio" id="milkshake" name="accordion"/>
+  <label class="item" for="milkshake">
+    <div class="title">milkshake</div>
+    <div class="content">
+      <ul class="list-group">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          VANILA MILKSHAKE 
+          <span class="badge bg-warning rounded-pill fs-6">&#8377; 90</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          CHOCOLATE MILKSHAKE 
+          <span class="badge bg-warning rounded-pill fs-6">&#8377; 90</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          BUTERSCOTCH MILKSHAKE
+          <span class="badge bg-warning rounded-pill fs-6">&#8377; 90</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          STRAWBERY MILKSHAKE 
+          <span class="badge bg-warning rounded-pill fs-6">&#8377; 90</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          DRYFRUIT MILKSHAKE
+          <span class="badge bg-warning rounded-pill fs-6">&#8377; 130</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          MIXFRUIT MILKSHAKE
+          <span class="badge bg-warning rounded-pill fs-6">&#8377; 130</span>
+        </li>
+
+      </ul>
     </div>
-    <div class="row menu-tab-content" id="pizza">
-        <div class="item-card" data-aos="zoom-in-right">
-            <div class="item-title">
-              <img src="img/menu/1.jpg" alt="menu item thumbnail">
-              <div class="item-desc">
-                <h3>Veg. Cheese Pizza</h3>
-                ₹140.00
-              </div>
-            </div>
-        </div>
-        <div class="item-card" data-aos="zoom-in-right">
-            <div class="item-title">
-              <img src="img/menu/1.jpg" alt="menu item thumbnail">
-              <div class="item-desc">
-                <h3>Cheese Pizza</h3>
-                ₹150.00
-              </div>
-            </div>
-        </div>
-        <div class="item-card" data-aos="zoom-in-right">
-            <div class="item-title">
-              <img src="img/menu/1.jpg" alt="menu item thumbnail">
-              <div class="item-desc">
-                <h3>Jain Pizza</h3>
-                ₹140.00
-              </div>
-            </div>
-        </div>
-        <div class="item-card" data-aos="zoom-in-right">
-            <div class="item-title">
-              <img src="img/menu/1.jpg" alt="menu item thumbnail">
-              <div class="item-desc">
-                <h3>Mashroom Pizza</h3>
-                ₹160.00
-              </div>
-            </div>
-        </div>
+  </label>
+  <!--menu section end-->
+
+    <!--menu section start-->
+    <input type="radio" id="shorbaAndSoup" name="accordion"/>
+    <label class="item" for="shorbaAndSoup">
+      <div class="title">SHORBA AND SOUP</div>
+      <div class="content">
+        <ul class="list-group">
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            BADAM PALAK SHORBA (J)
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 110</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            PALAK SOUP 
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 110</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            VEG SWEETCORN SOUP
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 110</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            TOMATO SHORBA
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 110</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            CREAM OF TOMATO (J)
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 110</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            CREAM OF MUSHROOM
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 110</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            VEG CLEAR SOUP (J)
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 120</span>
+          </li> 
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            HOT AND SOUR VEG
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 110</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            MANCHOW VEG
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 110</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            LEMON CORIENDER SOUP (J)
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 110</span>
+          </li>
+        </ul>
+      </div>
+    </label>
+    <!--menu section end-->
+
+      <!--menu section start-->
+  <input type="radio" id="indianStarters" name="accordion"/>
+  <label class="item" for="indianStarters">
+    <div class="title">INDIAN STARTERS</div>
+    <div class="content">
+      <ul class="list-group">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          HARABHARA KEBAB
+          <span class="badge bg-warning rounded-pill fs-6">&#8377; 170</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          ALOO CORN TIKKI (J)
+          <span class="badge bg-warning rounded-pill fs-6">&#8377; 170</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          PANEER KOLIWADA (J)
+          <span class="badge bg-warning rounded-pill fs-6">&#8377; 190</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          NARAM DIL KEBAB
+          <span class="badge bg-warning rounded-pill fs-6">&#8377; 220</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          KURKURE BHENDI (J)
+          <span class="badge bg-warning rounded-pill fs-6">&#8377; 170</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          CORN CHEESE BALL (J)
+          <span class="badge bg-warning rounded-pill fs-6">&#8377; 220</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          PANEER PAKODA (J)
+          <span class="badge bg-warning rounded-pill fs-6">&#8377; 190</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          MIX PAKODA 
+          <span class="badge bg-warning rounded-pill fs-6">&#8377; 140</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          ALOO PAKODA
+          <span class="badge bg-warning rounded-pill fs-6">&#8377; 110</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          palak kaju roll (j)
+          <span class="badge bg-warning rounded-pill fs-6">&#8377; 180</span>
+        </li> 
+      </ul>
     </div>
-    <div class="row menu-tab-content" id="rice">
-        <div class="item-card" data-aos="zoom-in-right">
-            <div class="item-title">
-              <img src="img/menu/1.jpg" alt="menu item thumbnail">
-              <div class="item-desc">
-                <h3>Steam Rice</h3>
-                ₹80.00
-              </div>
+  </label>
+  <!--menu section end-->
+
+    <!--menu section start-->
+    <input type="radio" id="tandoorStarter" name="accordion"/>
+    <label class="item" for="tandoorStarter">
+      <div class="title">TANDOOR STARTER</div>
+      <div class="content">
+        <ul class="list-group">
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            VEG SEEKH KEBAB
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 170</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            PANEER TIKKA/ACHARI/LASOONI/PAHADI/BANJARA
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 210</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            PANEER MALAI KEBAB /KALIMIRI 
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 220</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            PANEER TIKKA DILDAR / ANGARA KEBAB
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 230</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            TANDOORI MUSHROOM
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 190</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            TANDOORI ALOO/GOBI
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 170</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            BHARWA MUSHROOM
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 190</span>
+          </li> 
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            BHARWA ALOO 
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 170</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            ASSORTED VEG PLATTER
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 590</span>
+          </li>
+        </ul>
+      </div>
+    </label>
+    <!--menu section end-->
+
+      <!--menu section start-->
+  <input type="radio" id="chineseStarter" name="accordion"/>
+  <label class="item" for="chineseStarter">
+    <div class="title">CHINESE STARTER</div>
+    <div class="content">
+      <ul class="list-group">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          VEG CRISPY
+          <span class="badge bg-warning rounded-pill fs-6">&#8377; 180</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          VEG MANCHURIAN DRY
+          <span class="badge bg-warning rounded-pill fs-6">&#8377; 170</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          SPRING ROLL-VEG 
+          <span class="badge bg-warning rounded-pill fs-6">&#8377; 190</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          PANEER CHILLY DRY 
+          <span class="badge bg-warning rounded-pill fs-6">&#8377; 190</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          SALT AND PEPPER-VEG
+          <span class="badge bg-warning rounded-pill fs-6">&#8377; 180</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          HONEY CHILLY POTATO
+          <span class="badge bg-warning rounded-pill fs-6">&#8377; 190</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          PANEER HOT PAN
+          <span class="badge bg-warning rounded-pill fs-6">&#8377; 210</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          MUSHROOM CHILLY DRY
+          <span class="badge bg-warning rounded-pill fs-6">&#8377; 190</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          SEASME HONEY PANEER
+          <span class="badge bg-warning rounded-pill fs-6">&#8377; 210</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          PANEER CRISPY 
+          <span class="badge bg-warning rounded-pill fs-6">&#8377; 190</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          PANEER SATAEY
+          <span class="badge bg-warning rounded-pill fs-6">&#8377; 220</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          CRISPY CORN BLACK PEPPER
+          <span class="badge bg-warning rounded-pill fs-6">&#8377; 190</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          DRAGON PANEER
+          <span class="badge bg-warning rounded-pill fs-6">&#8377; 220</span>
+        </li> 
+      </ul>
+    </div>
+  </label>
+  <!--menu section end-->
+
+    <!--menu section start-->
+    <input type="radio" id="southIndian" name="accordion"/>
+    <label class="item" for="southIndian">
+      <div class="title">South Indian</div>
+      <div class="content">
+        <ul class="list-group">
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Dhosa
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 70</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Dhosa
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 70</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Dhosa
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 70</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Dhosa
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 70</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Dhosa
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 70</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Dhosa
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 70</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Dhosa
+            <span class="badge bg-warning rounded-pill fs-6">&#8377; 70</span>
+          </li> 
+        </ul>
+      </div>
+    </label>
+    <!--menu section end-->
+
+    
+
+    <!--menu section start-->
+    <input type="radio" id="mocktails" name="accordion"/>
+    <label class="item" for="mocktails">
+      <div class="title">Mocktails</div>
+      <div class="content">
+        <ul class="list-group">
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Strawbery Fizz</div>
+              (Strawbery crush with sprite)
             </div>
-        </div>
-        <div class="item-card" data-aos="zoom-in-right">
-            <div class="item-title">
-              <img src="img/menu/1.jpg" alt="menu item thumbnail">
-              <div class="item-desc">
-                <h3>Jeera</h3>
-                ₹115.00
-              </div>
-            </div>
-        </div>
-        <div class="item-card" data-aos="zoom-in-right">
-            <div class="item-title">
-              <img src="img/menu/1.jpg" alt="menu item thumbnail">
-              <div class="item-desc">
-                <h3>Lemon Rice</h3>
-                ₹140.00
-              </div>
-            </div>
-        </div>
+            <span class="badge bg-warning rounded-pill fs-6">14</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Dhosa
+            <span class="badge bg-warning rounded-pill fs-6">70</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Dhosa
+            <span class="badge bg-warning rounded-pill fs-6">70</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Dhosa
+            <span class="badge bg-warning rounded-pill fs-6">70</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Dhosa
+            <span class="badge bg-warning rounded-pill fs-6">70</span>
+          </li> 
+        </ul>
+      </div>
+    </label>
+    <!--menu section end-->
   </div>
-</section>
 
-<!--menu Section End-->
+<!--menu card End-->
 
-
-<!--footer Start-->
-
-<footer class="footer" id="footer">
-  <div class="container">
-    <div class="row">
-      <div class="footer-item" data-aos="fade-up" data-aos-duration="1000">
-        <h3>our location</h3>
-        <p>
-          Pachwad, Satara<br>
-          Mumbai Banglore Highway,<br>
-          Maharashtra 415312<br>
-        <p>
+  <!--footer Start-->
+  <footer class="footerC" id="footer">
+    <div class="containerC">
+      <div class="rowC">
+        <div class="footer-item" data-aos="fade-up" data-aos-duration="1000">
+          <h3>our location</h3>
+          <p>
+            Pune - Satara Road<br>
+            Near Shreraj Washing Center<br>
+            Pachwad, Satara 412803<br>
+          <p>
+        </div>
+        <div class="footer-item" data-aos="fade-up" data-aos-duration="1000">
+          <h3>Opening Hours</h3>
+          <p>Monday to Sunday <br>9:00 AM - 11:00 PM</p>
+        </div>
+        <div class="footer-item" data-aos="fade-up" data-aos-duration="1000">
+          <h3>contact us</h3>
+          <p>+91 8511939090</p>
+          <p>saybanchawada@gmail.com</p>
+          <div class="social-links">
+            <a href="https://www.facebook.com/hotelsaybanchawada"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/hotelsaybanchawada/"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/+918511939090"><i class="fab fa-whatsapp"></i></a>
+            <a href="tel:+918511939090"><i class="fas fa-phone-alt"></i></a>
+          </div>
+        </div>
       </div>
-      <div class="footer-item" data-aos="fade-up" data-aos-duration="1000">
-        <h3>Opening Hours</h3>
-        <p>Monday to Sunday <br>9:00 AM - 11:00 PM</p>
-      </div>
-      <div class="footer-item" data-aos="fade-up" data-aos-duration="1000">
-        <h3>contact us</h3>
-        <p>91 9158793271</p>
-        <p>info@sugaranichakhopa.com</p>
-        <div class="social-links">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-youtube"></i></a>
+      <div class="rowC">
+        <div class="copyright">
+          &copy; 2021 - Hotel Saybancha Wada
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="copyright">
-        &copy; 2021 - Sugaranicha Khopa
-      </div>
-    </div>
+  </footer>
+
+
+  <!--footer End-->
+  <div class="call-btn">
+    <a href="tel:+918511939090" role="button"><i class="fas fa-phone-alt my-float"></i></a>
   </div>
-</footer>
 
-<!--footer End-->
+  <div class="whats-app-btn">
+    <a href="https://wa.me/+918511939090" role="button"><i class="fab fa-whatsapp my-float"></i></a>
+  </div>
 
-<script src="js/aos.js"></script> 
-<script src="js/script.js"></script>
+  <script src="js/aos.js"></script>
 
+  
+  <!-- MDB -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.0/mdb.min.js"></script>
+ 
 
-<script>
+  <script>
     /* close nav when clicking on nav item */
-document.addEventListener("click",function(e){
-    if(e.target.closest(".menu-tab-item")){
+    document.addEventListener("click", function (e) {
+      if (e.target.closest(".menu-tab-item")) {
         toggleNav();
+      }
+    });
+  </script>
+  <script>
+
+    window.addEventListener("load", function () {
+      /*--------------------------- Animation On Scroll ---------------------------------------- */
+      AOS.init();
+    });
+    /*--------------------------- toggle navbar ---------------------------------------- */
+    const navTogler = document.querySelector(".nav-togglerC");
+    navTogler.addEventListener("click", toggleNav);
+
+    function toggleNav() {
+      navTogler.classList.toggle("activeC");
+      document.querySelector(".navC").classList.toggle("openC");
     }
-});
-</script>
+
+    /* close nav when clicking on nav item */
+    document.addEventListener("click", function (e) {
+      if (e.target.closest(".nav-itemC")) {
+        toggleNav();
+      }
+    });
+
+
+    /*--------------------------- sticky navbar ---------------------------------------- */
+    window.addEventListener("scroll", function () {
+      if (this.pageYOffset > 60) {
+        this.document.querySelector(".headerC").classList.add("stickyC");
+      } else {
+        this.document.querySelector(".headerC").classList.remove("stickyC");
+      }
+    });
+
+  </script>
 </body>
+
 </html>
